@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Convertidor de unidades</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/convertidor.css" />
+</head>
+<body>
+  <img src="../img/logo.png" alt="Logo del proyecto" class="logo" />
+  <h1>Convertidor de Unidades</h1>
+
+  <div class="container">
+    <div class="grid grid-3">
+      <div>
+        <label for="category">Categoría</label>
+        <select id="category"></select>
+      </div>
+      <div>
+        <label for="fromUnit">De</label>
+        <select id="fromUnit"></select>
+      </div>
+      <div>
+        <label for="toUnit">A</label>
+        <select id="toUnit"></select>
+      </div>
+    </div>
+
+    <div class="grid grid-2">
+      <div>
+        <label for="amount">Cantidad</label>
+        <input id="amount" type="number" step="any" placeholder="Ingresa un valor (ej. 12.5)" />
+      </div>
+      <div class="result-container">
+        <label>Resultado</label>
+        <div id="result" class="result">—</div>
+      </div>
+    </div>
+  </div>
+
+  <a class="back" href="../index.html">← Volver al inicio</a>
+
+  <script src="../js/convertidor.js"></script>
+</body>
+</html>

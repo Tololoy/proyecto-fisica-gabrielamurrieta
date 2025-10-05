@@ -1,0 +1,65 @@
+.container {
+  width: min(900px, 92%);
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 24px;
+  border-radius: 14px;
+  backdrop-filter: blur(2px);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Espaciado adicional entre selects y resultados */
+.grid-2 {
+  margin-top: 28px;
+}
+
+.result {
+  font-size: 1.15rem;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 14px;
+  border-radius: 10px;
+  min-height: 44px;        /* asegura altura fija */
+  display: flex;
+  align-items: center;     /* centra verticalmente el texto */
+}
+
+.muted {
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+a.back {
+  color: #fff;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.result-container{
+  margin-left: 3ch;
+}
